@@ -26,6 +26,7 @@ public class CurrencyExchangeController {
 		
 		exchangeValue.setPort(Integer.parseInt(environment.getProperty("local.server.port")));
 
+		logger.info("Exchange service called");
 		logger.info("{}", exchangeValue);
 
 		return exchangeValue;
